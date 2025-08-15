@@ -2,7 +2,7 @@ class Solution:
     def mostPoints(self, questions: List[List[int]]) -> int:
 
 
-        # Solution 2 (36% Time)
+        # Solution 1 (36% Time)
         # dp = [0] * len(questions)
 
         # def max_point(start, questions, dp):
@@ -22,7 +22,7 @@ class Solution:
         # return max_point(0, questions, dp)
 
 
-        
+        # Bottom Up solution
         dp = [0] * len(questions)
         for i in range(len(questions) - 1, -1, -1):
             index = i + questions[i][1] + 1
