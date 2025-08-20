@@ -4,7 +4,6 @@ class Solution:
         win_count = 0
         candidate = arr[0]
         for i in range(1, len(arr)):
-            print(candidate, arr[i])
             if candidate > arr[i]:
                 win_count += 1
                 if win_count == k:
